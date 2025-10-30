@@ -98,9 +98,7 @@ footer .sns li a {
     text-decoration: underline;
 }
 
-/*--------------------------------------
-    レスポンシブ対応
----------------------------------------*/
+/* レスポンシブ対応 */
 @media (max-width: 834px) {
     .main-visual img {
         object-position: center; /* スマホでは中央寄せ */
@@ -122,4 +120,113 @@ footer .sns li a {
         object-fit: cover;
     }
 
+}
+
+
+/* レシピページ */
+.recipe-detail {
+    display: flex;
+    width: 100%;
+    min-height: 700px;
+}
+
+.recipe-image {
+    width: 50%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe-info {
+    width: 50%;
+    padding: 40px 5% 0 5%;
+    /* font-family: "Helvetica Neue", Arial, "Hiragino Sans", Meiryo, sans-serif; */
+}
+
+.recipe-info h1 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 3rem;
+    margin-bottom: 20px;
+}
+
+.recipe-info .description {
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.recipe-info h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 5px 0;
+    margin-bottom: 26px;
+    border-bottom: #cccccc 1px solid;
+}
+
+.ingredients {
+    margin-bottom: 46px;
+}
+.ingredients li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #ccc;
+    padding: 8px 0;
+}
+
+.steps {
+    list-style: decimal inside; /* 番号を表示 */
+}
+
+.steps li {
+    display: list-item; /* リストとして扱う（flex指定があるので上書き） */
+    border-bottom: 1px dotted #ccc;
+    padding: 6px 0;
+    line-height: 1.6;
+}
+
+
+.ingredients .name,
+.steps .name {
+    text-align: left;
+}
+
+.ingredients .amount,
+.steps .amount {
+    text-align: right;
+}
+
+/* TOPへ戻るボタン */
+.back-link {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.back-link .btn {
+    display: inline-block;
+    font-size: 14px;
+    padding: 18px 60px;
+    border: #2B2A27 1px solid;
+    text-decoration: none;
+}
+
+
+/* レスポンシブ対応 */
+@media (max-width: 834px) {
+    .recipe-detail {
+        flex-direction: column;
+    }
+    .recipe-image,
+    .recipe-info {
+        width: 100%;
+        height: auto;
+    }
+    .recipe-info {
+        padding: 30px 5%;
+    }
 }
