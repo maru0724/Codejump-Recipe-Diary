@@ -75,7 +75,10 @@ body {
     font-size: 14px;
     padding: 18px 60px;
     border: #2B2A27 1px solid;
+    color: #2B2A27;
+    background-color: #fff;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 /* フッター */
@@ -212,7 +215,16 @@ footer .sns li a {
     font-size: 14px;
     padding: 18px 60px;
     border: #2B2A27 1px solid;
+    color: #2B2A27;
+    background-color: #fff;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link .btn:hover,
+.back-link .btn:hover {
+    background-color: #2B2A27;
+    color: #fff;
 }
 
 
